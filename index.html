@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.border{  
+   
+  color: white;
+  text-align: center;
+  height:   100px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px;
+ /* background-color:   green;*/
+}
+.footer{
+  height:   auto;
+  border: 2px;
+  background-color:   green;
+}
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 12px 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=checkbox]
+{
+  padding: 12px 20px;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+
+button {
+  
+  background-color: #007335;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px;
+  cursor: pointer;
+  width: 10%;
+}
+.container {
+
+  text-align: center;
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+button:hover {
+  opacity: 0.9;
+  color:  red;
+}
+h2{
+
+  text-align: center;
+}
+.btn{
+  position: relative;
+  animation: myfirst 3s 1;
+  animation-direction: alternate-reverse;
+}
+@keyframes myfirst {
+ 
+  10%  {background: red; }
+  20%  {background: blue;  }
+  30%  {background: green;  }
+  40% {background: red;  }
+  50%  {background: green; }
+  60%  {background: blue;  }
+  70%  {background: green;  }
+  80% {background: red;  }
+  90%  {background: green;  }
+  100% {background: red;  }
+}
+</style>
+<script type="text/javascript">
+     function onSubmit() {
+          if (document.getElementById ('password').value == 'zawzaw99') {window.location.href = 'home.html'; }else{ alert('Please check your passcode and try again');}
+     }
+</script>
+<head>
+  <title></title>
+
+
+</head>
+<body>
+
+  <div class="border"></div>
+  
+ <!--  <h2>ပျဉ်းမနားမြို့နယ် (၂၀၂၀-၂၀၂၁ ခုနှစ်) Databaseထည့်သွင်းရန် </h2> -->
+  <form class="hero-form" action="#">
+  <!-- <div class="imgcontainer">
+    <img src="images/loading.gif" alt="Avatar" class="avatar"> -->
+
+
+    <div>
+      <center>
+        <div><h1>ပျဉ်းမနားမြို့နယ်ကျေးလက်လမ်းဖွံ့ဖြိုးရေးဦးစီးဌာန</h1></div><img src="images/moc1.png" width="200px" height="200px"></center>
+    </div>
+
+
+          <div class="container">
+          <label for="uname"><b>Username</b> <input type="text" name="uname" placeholder="Enter Username" required><br>
+          <label for="psw"><b>Password </b></label><input type="password" name="psw" maxlength="8"  class="span7" id="password" placeholder="Type Password" required><br>
+          <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me 
+    </label>
+          </div> 
+  </form>
+  </div>
+
+
+
+<div class="bt">
+<center><button class="btn" id="joe_btn" onclick="onSubmit()" >Login</button> </center>
+<br>
+</div>
+<div class="footer"> </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
